@@ -11,8 +11,12 @@ st.write("Estamos trabajando con un dataframe con datos de carros en venta, el d
 
 data_visualizer = st.button("Visualizar datos")
 
+
+
 if data_visualizer:
-    car_data
+    st.caption("mostramos los primeros 100 datos del dataframe")
+    
+    car_data.head(100)
 
     st.write("El dataframe contiene datos de mas de 50000 carros")
 
